@@ -10,7 +10,6 @@ defined('_JEXEC') or die();
 
 class PKG_DD_GMaps_ModuleInstallerScript
 {
-
 	protected $name = 'DD GMaps Module Package';
 
 	protected $moduleName = 'mod_dd_gmaps_module';
