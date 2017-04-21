@@ -2,7 +2,7 @@
 
 ### Module package for DD_J_mod_gmaps_module
 
-**The [Module package](https://github.com/hr-it-solutions/DD_J_pkg_gmaps_module_package) installer compilation contains:**
+**This Module package installer compilation contains:**
 
 - mod_gmaps_module [GMaps Module](https://github.com/hr-it-solutions/DD_J_mod_gmaps_module)
 - plg_system_gmaps_locations_geocode [GMaps Locations GeoCode](https://github.com/hr-it-solutions/DD_J_plg_system_gmaps_locations_geocode)
