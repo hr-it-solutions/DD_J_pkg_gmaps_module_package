@@ -1,6 +1,6 @@
 # DD_J_pkg_gmaps_module_package
 
-### Component package for DD_J_com_gmaps_locations
+### Component package for DD_J_mod_gmaps_module
 
 **The [Component package](https://github.com/hr-it-solutions/DD_J_pkg_gmaps_locations_package) installer compilation contains:**
 
