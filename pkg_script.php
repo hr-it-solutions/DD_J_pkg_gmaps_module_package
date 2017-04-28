@@ -1,13 +1,19 @@
 <?php
 /**
- * @version    1-1-0-0 // Y-m-d 2017-04-21
- * @author     HR IT-Solutions Florian Häusler https://www.hr-it-solutions.com
+ * @package    DD_GMaps_Module_Package
+ *
+ * @author     HR IT-Solutions Florian Häusler <info@hr-it-solutions.com>
  * @copyright  Copyright (C) 2011 - 2017 Didldu e.K. | HR IT-Solutions
  * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
  **/
 
 defined('_JEXEC') or die();
 
+/**
+ * Class PKG_DD_GMaps_ModuleInstallerScript
+ *
+ * @since  Version  1.1.0.2
+ */
 class PKG_DD_GMaps_ModuleInstallerScript
 {
 	protected $name = 'DD GMaps Module Package';
@@ -37,12 +43,12 @@ class PKG_DD_GMaps_ModuleInstallerScript
 			$query = $db->getQuery(true)
 					->update('#__extensions')
 					->set($db->qn('enabled') . ' = ' . $db->q(1))
-					->where('type = ' . $db->quote($extension['type']))
-					->where('element = ' . $db->quote($extension['name']));
+					->where('type = ' . $db->q($extension['type']))
+					->where('element = ' . $db->q($extension['name']));
 
 			if ($extension['type'] === 'plugin')
 			{
-				$query->where('folder = ' . $db->quote($extension['group']));
+				$query->where('folder = ' . $db->q($extension['group']));
 			}
 
 			$db->setQuery($query);
